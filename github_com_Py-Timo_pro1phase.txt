@@ -1,0 +1,9 @@
+https://github.com/Py-Timo/pro1phase
+
+echo "# pro1phase" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Py-Timo/pro1phase.git
+git push -u origin main
