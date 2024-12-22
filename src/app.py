@@ -1,5 +1,5 @@
 import dash
-from dash import dcc, html, Input, Output, State
+from dash import Dash,dcc, html, Input, Output, State
 import paho.mqtt.client as mqtt
 import threading
 import json
@@ -7,7 +7,7 @@ import pandas as pd
 import plotly.express as px
 import datetime
 #
-app = dash.Dash(__name__)
+app = Dash(__name__)
 server = app.server
 # MQTT Configuration
 BROKER = "broker.hivemq.com"
@@ -203,5 +203,4 @@ def export_data_to_csv(n_clicks):
 
 # Run the App
 if __name__ == "__main__":
-    app.run(port=8080)
-    # app.run_server(debug=True)
+    app.run_server(debug=True)
