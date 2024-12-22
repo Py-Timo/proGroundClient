@@ -6,7 +6,8 @@ import json
 import pandas as pd
 import plotly.express as px
 import datetime
-
+#
+app = dash.Dash(__name__)
 server = app.server
 # MQTT Configuration
 BROKER = "broker.hivemq.com"
