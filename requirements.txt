@@ -2,8 +2,6 @@ dash==2.18.2
 pandas
 datetime
 paho-mqtt==2.1.0
-threading
-json
 gunicorn==23.0.0
 dash-tools
 
