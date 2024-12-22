@@ -1,5 +1,9 @@
 dash==2.18.2
 pandas
+datetime
+paho.mqtt.client
+threading
+json
 gunicorn
 dash-tools
 
