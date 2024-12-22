@@ -1,10 +1,4 @@
 dash==2.18.2
-dash-bootstrap-components==1.6.0
-dash-core-components==2.0.0
-dash-html-components==2.0.0
-dash-iconify==0.1.2
-dash-mantine-components==0.12.0
-dash-table==5.0.0
-dash-tools==1.12.0
-dash_daq==0.5.0
+pandas
+
 
