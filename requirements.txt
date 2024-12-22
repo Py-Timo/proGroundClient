@@ -1,4 +1,4 @@
-dash==2.18.2
+dash
 pandas
 datetime
 paho.mqtt.client
