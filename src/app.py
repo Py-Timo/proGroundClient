@@ -1,5 +1,5 @@
 import dash
-from dash import Dash,dcc, html, Input, Output, State
+from dash import dcc, html, Input, Output, State
 import paho.mqtt.client as mqtt
 import threading
 import json
@@ -7,8 +7,7 @@ import pandas as pd
 import plotly.express as px
 import datetime
 #
-app = Dash(__name__)
-#server = app.server
+
 # MQTT Configuration
 BROKER = "broker.hivemq.com"
 #BROKER = "155.190.42.5"
@@ -27,6 +26,7 @@ history = {"time": [], "device": [], "voltage": [], "current": []}
 
 # Dash App Setup
 app = dash.Dash(__name__)
+server = app.server
 app.layout = html.Div(
     style={"textAlign": "center", "fontFamily": "Arial, sans-serif", "backgroundColor": "#f4f4f9", "padding": "50px"},
     children=[
