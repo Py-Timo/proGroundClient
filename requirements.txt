@@ -1,4 +1,6 @@
 dash==2.18.2
 pandas
+gunicorn
+dash-tools
 
 
