@@ -8,7 +8,7 @@ import plotly.express as px
 import datetime
 #
 app = Dash(__name__)
-server = app.server
+#server = app.server
 # MQTT Configuration
 BROKER = "broker.hivemq.com"
 #BROKER = "155.190.42.5"
