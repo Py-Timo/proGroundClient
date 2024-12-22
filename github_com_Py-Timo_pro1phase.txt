@@ -3,6 +3,10 @@ https://www.youtube.com/watch?v=XWJBJoV5yww&t=200s
 
 https://github.com/Py-Timo/pro1phase
 
+
+pip freeze > requirements.txt
+
+
 echo "# pro1phase" >> README.md
 git init
 git add README.md
