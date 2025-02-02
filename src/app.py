@@ -23,6 +23,8 @@ history = {"time": [], "device": [], "voltage": [], "current": []}
 
 # Dash App Setup
 app = dash.Dash(__name__)
+server = app.server
+
 app.layout = html.Div(
     style={"textAlign": "center", "fontFamily": "Arial, sans-serif", "backgroundColor": "#f4f4f9", "padding": "50px"},
     children=[
@@ -226,8 +228,7 @@ def export_data_to_csv(n_clicks):
 
     return n_clicks
 #######################################
-# Expose the server for Gunicorn
-server = app.server  
+
 # Run the App
 if __name__ == "__main__":
-    app.run_server(host="0.0.0.0", port=8080)
+    app.run_server(port=8050)
